@@ -23,5 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
   
     window.addEventListener("scroll", debounceScroll);
     revealOnScroll(); // Appel initial au chargement
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('nav.menu');
+    
+      menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
+    });
+    
+    
   });
   
