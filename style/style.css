@@ -357,7 +357,24 @@
       .section-presentation {
         padding: 2rem 1.2rem;
       }
-    
+      @media (max-width: 768px) {
+        .hero-content {
+          flex-direction: column-reverse;
+          align-items: center;
+          text-align: center;
+        }
+      
+        .hero-text, .hero-image {
+          max-width: 100%;
+        }
+      
+        .hero-image img {
+          max-width: 300px;
+          height: auto;
+          margin: 1rem auto 0;
+        }
+      }
+      
       .section-presentation h2 {
         font-size: 1.6rem;
       }
