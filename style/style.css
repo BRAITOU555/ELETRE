@@ -41,6 +41,14 @@
     font-size: 1.8rem;
     font-weight: bold;
   }
+  .slogan {
+    font-size: 1rem;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
+  
   
   nav ul {
     display: flex;
