@@ -3,180 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Transport médicalisé dans le Val-de-Marne (94) : transport urgent de greffes, sang, médicaments, prélèvements biologiques, personnel de santé. Intervention 24h/24 à Créteil, Vitry-sur-Seine, Ivry et dans tout le 94.">
-  <meta name="keywords" content="transport médical Val-de-Marne, transport sanitaire 94, urgence médicale 94, greffes 94, sang Val-de-Marne, transport médicalisé 94, ambulancier 94, transport d'organes 94, prélèvements biologiques 94, Créteil, Vitry, Ivry, Saint-Maur">
-  <title>Transport médicalisé dans le Val-de-Marne (94) - Urgences & Logistique - ÉLETRE</title>
+  <meta name="description" content="Transport médicalisé dans les Hauts-de-Seine (92) : greffes, sang, médicaments, échantillons biologiques, personnel soignant. Urgences 24h/24 dans tout le département 92, notamment à Boulogne, Levallois, Nanterre et Clamart.">
+  <meta name="keywords" content="transport médical Hauts-de-Seine, transport sanitaire 92, urgence médicale 92, transport greffe 92, sang 92, logistique médicale 92, transport médicalisé 92, ambulancier privé 92, Antony, Levallois, Boulogne, Nanterre, Suresnes, Asnières, Courbevoie, Clamart, Colombes, Meudon, Neuilly-sur-Seine">
+  <title>Transport médicalisé dans les Hauts-de-Seine (92) - Urgences & Logistique - ÉLETRE</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #0a0f2c;
-      color: #fff;
-      padding: 1.2rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    .container {
-      width: 95%;
-      max-width: 1400px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .left-part {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #f1416c;
-    }
-    .slogan {
-      font-size: 0.9rem;
-      font-style: italic;
-      color: #eee;
-    }
-    nav.desktop-menu ul {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-      padding: 0;
-    }
-    nav.desktop-menu ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .hamburger-btn {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 2rem;
-      color: #fff;
-      cursor: pointer;
-    }
-    .nav-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 80%;
-      max-width: 300px;
-      height: 100%;
-      background: #0a0f2c;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease-in-out;
-      z-index: 1000;
-      padding-top: 4rem;
-    }
-    .nav-menu.open {
-      transform: translateX(0);
-    }
-    .nav-menu ul {
-      list-style: none;
-      padding: 1rem 2rem;
-    }
-    .nav-menu li {
-      margin-bottom: 1rem;
-    }
-    .nav-menu a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    @media (max-width: 768px) {
-      .hamburger-btn {
-        display: block;
-      }
-      nav.desktop-menu {
-        display: none;
-      }
-    }
-    .phone-call {
-      background-color: #f1416c;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 25px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    .section-container {
-      padding: 3rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .section-text h1 {
-      font-size: 2.4rem;
-      color: #0a0f2c;
-    }
-    .section-text p {
-      font-size: 1.1rem;
-      text-align: justify;
-      margin-bottom: 1.5rem;
-    }
-    .icon-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .icon-box {
-      flex: 1 1 250px;
-      background: #f8f9fc;
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-    .icon-box img {
-      width: 50px;
-      margin-bottom: 1rem;
-    }
-    .custom-footer {
-      background-color: #101432;
-      color: #fff;
-      padding: 2rem 1rem;
-      font-size: 0.95rem;
-    }
-    .footer-wrapper {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .footer-brand h2 {
-      color: #f1416c;
-    }
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
-    }
-    .footer-links a {
-      color: #fff;
-      text-decoration: none;
-    }
+    body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: #fff; color: #333; line-height: 1.6; }
+    header { background-color: #0a0f2c; color: #fff; padding: 1.2rem 0; position: sticky; top: 0; z-index: 999; }
+    .container { width: 95%; max-width: 1400px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .left-part { display: flex; flex-direction: column; align-items: flex-start; }
+    .logo { font-size: 1.8rem; font-weight: 700; color: #f1416c; }
+    .slogan { font-size: 0.9rem; font-style: italic; color: #eee; }
+    nav.desktop-menu ul { display: flex; gap: 2rem; list-style: none; padding: 0; }
+    nav.desktop-menu ul li a { color: #fff; text-decoration: none; font-weight: 500; }
+    .hamburger-btn { display: none; background: none; border: none; font-size: 2rem; color: #fff; cursor: pointer; }
+    .nav-menu { position: fixed; top: 0; left: 0; width: 80%; max-width: 300px; height: 100%; background: #0a0f2c; transform: translateX(-100%); transition: transform 0.3s ease-in-out; z-index: 1000; padding-top: 4rem; }
+    .nav-menu.open { transform: translateX(0); }
+    .nav-menu ul { list-style: none; padding: 1rem 2rem; }
+    .nav-menu li { margin-bottom: 1rem; }
+    .nav-menu a { color: #fff; text-decoration: none; font-size: 1.1rem; }
+    .close-btn { position: absolute; top: 10px; right: 15px; background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer; }
+    @media (max-width: 768px) { .hamburger-btn { display: block; } nav.desktop-menu { display: none; } }
+    .phone-call { background-color: #f1416c; color: #fff; padding: 0.5rem 1rem; border-radius: 25px; font-weight: 600; text-decoration: none; font-size: 0.9rem; }
+    .section-container { padding: 3rem 2rem; max-width: 1100px; margin: auto; }
+    .section-text h1 { font-size: 2.4rem; color: #0a0f2c; }
+    .section-text p { font-size: 1.1rem; text-align: justify; margin-bottom: 1.5rem; }
+    .icon-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+    .icon-box { flex: 1 1 250px; background: #f8f9fc; border-radius: 10px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .icon-box img { width: 50px; margin-bottom: 1rem; }
+    .custom-footer { background-color: #101432; color: #fff; padding: 2rem 1rem; font-size: 0.95rem; }
+    .footer-wrapper { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; flex-wrap: wrap; }
+    .footer-brand h2 { color: #f1416c; }
+    .footer-links ul { list-style: none; padding: 0; }
+    .footer-links a { color: #fff; text-decoration: none; }
   </style>
 </head>
 <body>
@@ -184,7 +43,8 @@
     <div class="container">
       <div class="left-part">
         <h1 class="logo">ÉLETRE</h1>
-        <p class="slogan">"ÉLETRE, au cœur du soin et de la précision."</p>
+        <p class="slogan">"Transport médical 92 : rapidité, fiabilité, sécurité."
+        </p>
       </div>
       <button class="hamburger-btn">&#9776;</button>
       <nav class="desktop-menu">
@@ -212,55 +72,83 @@
 
   <section class="section-container">
     <div class="section-text">
-      <h1>Transport médicalisé dans les Hauts-de-Seine (92) – Urgences, fiabilité et expertise</h1>
-      <p><strong>ÉLETRE</strong> propose un service de <strong>transport médicalisé hautement réactif</strong> dans tout le département des Hauts-de-Seine (92). De <strong>La Défense à Boulogne-Billancourt</strong>, en passant par <strong>Clamart, Nanterre ou Levallois</strong>, nos équipes assurent le transport de greffes, de poches de sang, de médicaments thermosensibles, d’échantillons biologiques et de personnel de santé 24h/24.</p>
-      <p>Nos chauffeurs expérimentés interviennent dans un environnement urbain dense et optimisent chaque trajet en respectant la chaîne du froid, la sécurité sanitaire et les exigences logistiques strictes des établissements de santé.</p>
-      <p>Grâce à nos <strong>conteneurs certifiés ADR</strong>, à une <strong>traçabilité GPS en temps réel</strong> et à une flotte adaptée à chaque situation, nous garantissons la ponctualité, la fiabilité et la discrétion de chaque mission.</p>
+      <h1>Transport médicalisé dans les Hauts-de-Seine (92)</h1>
+      <p><strong>ÉLETRE</strong> propose un service expert en <a href="../pages/services.html">transport médicalisé</a> dans tout le département des Hauts-de-Seine (92). Nos interventions s’étendent de <a href="../villes/transport-boulogne-billancourt.html">Boulogne-Billancourt</a> à <a href="../villes/transport-nanterre-92.html">Nanterre</a>, en passant par <a href="../villes/transport-antony-92.html">Antony</a>, <a href="../villes/transport-levallois-perret-92.html">Levallois</a>, <a href="../villes/transport-chaville-92.html">Clamart</a>, <a href="../villes/transport-chaville-92.html">Colombes</a>, <a href="../villes/transport-suresnes-92.html">Suresnes</a> ou encore <a href="../villes/transport-neuilly-sur-seine-92.html">Neuilly-sur-Seine</a>. Nous assurons la logistique urgente de <a href="../pages/transport-de-greffe.html"> transport de greffe</a> <a href="../pages/transport-de-sang.html">transport de sang</a>, de médicaments thermosensibles et de personnel de santé.</p>
+
+      <p>Grâce à notre flotte adaptée et nos protocoles stricts, nous garantissons une conservation optimale des échantillons et traitements. Nos équipes sont formées aux exigences hospitalières et interviennent 24h/24 avec rigueur et précision.</p>
+
       <div class="icon-row">
         <div class="icon-box">
-          <img src="https://img.icons8.com/ios-filled/50/heart-health.png" alt="Organes">
+          <img src="https://img.icons8.com/ios-filled/50/heart-health.png" alt="Greffes">
           <h3>Greffes & organes</h3>
-          <p>Transport urgent d’organes vitaux avec suivi temps réel.</p>
+          <p>Transport urgent d’organes vers les blocs opératoires.</p>
         </div>
         <div class="icon-box">
           <img src="https://img.icons8.com/ios-filled/50/blood.png" alt="Sang">
-          <h3>Sang & dérivés</h3>
-          <p>Livraison sécurisée de poches sanguines vers centres hospitaliers.</p>
+          <h3>Sang & échantillons</h3>
+          <p>Livraisons contrôlées de poches de sang et prélèvements.</p>
         </div>
         <div class="icon-box">
           <img src="https://img.icons8.com/ios-filled/50/pill.png" alt="Médicaments">
           <h3>Médicaments sensibles</h3>
-          <p>Maintien de la chaîne du froid pour les traitements critiques.</p>
+          <p>Transport à température dirigée pour traitements vitaux.</p>
         </div>
         <div class="icon-box">
           <img src="https://img.icons8.com/ios-filled/50/stethoscope.png" alt="Personnel médical">
           <h3>Personnel médical</h3>
-          <p>Mobilité rapide pour soignants et techniciens de santé.</p>
-        </div>
-        <div class="icon-box">
-          <img src="https://img.icons8.com/ios-filled/50/microscope.png" alt="Biologiques">
-          <h3>Prélèvements biologiques</h3>
-          <p>Collecte et dépôt vers les laboratoires agréés du 94.</p>
+          <p>Mobilité rapide pour les professionnels de santé du 92.</p>
         </div>
       </div>
 
-      <p>Cliniques, laboratoires, centres hospitaliers, établissements publics : <strong>ÉLETRE</strong> est votre partenaire de confiance pour vos <strong>transports médicaux dans le Val-de-Marne</strong>. Un service réactif, humain et rigoureux, disponible 24h/24 et 7j/7.</p>
+      <p><strong>Contactez-nous dès maintenant</strong> pour toute demande de transport sanitaire dans le 92. ÉLETRE vous accompagne avec réactivité et sécurité.</p>
     </div>
+  </section>
+
+  <section class="section-container">
+    <h2>📍 Villes desservies dans les Hauts-de-Seine (92)</h2>
+    <ul style="columns: 2; font-size: 1rem; line-height: 1.8;">
+      <li><a href="../villes/transport-antony-92.html">Antony</a></li>
+      <li><a href="../villes/transport-asnieres-sur-seine-92.html">Asnières-sur-Seine</a></li>
+      <li><a href="../villes/transport-bagneux-92.html">Bagneux</a></li>
+      <li><a href="../villes/transport-boulogne-billancourt.html">Boulogne-Billancourt</a></li>
+      <li><a href="../villes/transport-bourg-la-reine-92.html">Bourg-la-Reine</a></li>
+      <li><a href="../villes/transport-chatenay-malabry-92.html">Châtenay-Malabry</a></li>
+      <li><a href="../villes/transport-chatillon-92.html">Châtillon</a></li>
+      <li><a href="../villes/transport-chaville-92.html">Chaville</a></li>
+      <li><a href="../villes/transport-clamart-92.html">Clamart</a></li>
+      <li><a href="../villes/transport-clichy-92.html">Clichy</a></li>
+      <li><a href="../villes/transport-colombes-92.html">Colombes</a></li>
+      <li><a href="../villes/transport-courbevoie.html">Courbevoie</a></li>
+      <li><a href="../villes/transport-fontenay-aux-roses-92.html">Fontenay-aux-Roses</a></li>
+      <li><a href="../villes/transport-garches-92.html">Garches</a></li>
+      <li><a href="../villes/transport-gennevilliers-92.html">Gennevilliers</a></li>
+      <li><a href="../villes/transport-issy-les-moulineaux-92.html">Issy-les-Moulineaux</a></li>
+      <li><a href="../villes/transport-la-garenne-colombes-92.html">La Garenne-Colombes</a></li>
+      <li><a href="../villes/transport-le-plessis-robinson-92.html">Le Plessis-Robinson</a></li>
+      <li><a href="../villes/transport-levallois-perret-92.html">Levallois-Perret</a></li>
+      <li><a href="../villes/transport-malakoff-92.html">Malakoff</a></li>
+      <li><a href="../villes/transport-meudon-92.html">Meudon</a></li>
+      <li><a href="../villes/transport-montrouge-92.html">Montrouge</a></li>
+      <li><a href="../villes/transport-nanterre-92.html">Nanterre</a></li>
+      <li><a href="../villes/transport-neuilly-sur-seine-92.html">Neuilly-sur-Seine</a></li>
+      <li><a href="../villes/transport-puteaux-92.html">Puteaux</a></li>
+      <li><a href="../villes/transport-rueil-malmaison-92.html">Rueil-Malmaison</a></li>
+      <li><a href="../villes/transport-sevres-92.html">Sèvres</a></li>
+      <li><a href="../villes/transport-suresnes-92.html">Suresnes</a></li>
+      <li><a href="../villes/transport-vanves-92.html">Vanves</a></li>
+      <li><a href="../villes/transport-vaucresson-92.html">Vaucresson</a></li>
+      <li><a href="../villes/transport-villeneuve-la-garenne-92.html">Villeneuve-la-Garenne</a></li>
+      
+      
+    </ul>
   </section>
 
   <footer class="custom-footer">
     <div class="footer-wrapper">
       <div class="footer-brand">
         <h2>ÉLETRE</h2>
-        <h4>Villes desservies</h4>
-  <ul>
-        <li><a href="../villes/transport-boulogne-billancourt.html">Transport à Boulogne-Billancourt</a></li>
-          <li><a href="../villes/transport-nanterre-92.html">Transport à Nanterre</a></li>
-          <li><a href="../villes/transport-asnieres-sur-seine-92.html">Transport à Transport à Asnières-sur-Seine</a></li>
-          <p>Transport médical sécurisé 24h/24 & 7j/7</p>
-        </ul>
+        <p>Transport médicalisé 24h/24 & 7j/7 dans le 92</p>
       </div>
-    
       <div class="footer-links">
         <h4>Liens utiles</h4>
         <ul>
