@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://eletre-transport-sang-greffes.fr/sitemap.xml
