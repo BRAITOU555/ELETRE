@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Transport d’équipements médicaux à Paris, en Île-de-France et en province. Fiabilité, sécurité, traçabilité.">
+  <title>Transport d'équipements médicalisés - Eletre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.8;
+    }
+    header {
+      background-color: #0a0f2c;
+      color: #fff;
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f1416c;
+    }
+    .slogan {
+      font-size: 0.9rem;
+      color: #ddd;
+      margin-top: 0.2rem;
+    }
+    nav.desktop-menu ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    nav.desktop-menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .phone-call {
+      background-color: #f1416c;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .hamburger-btn {
+      display: none;
+      background: #f1416c;
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 300px;
+      height: 100%;
+      background: #0a0f2c;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+      padding-top: 4rem;
+    }
+    .nav-menu.open {
+      transform: translateX(0);
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 1rem 2rem;
+    }
+    .nav-menu li {
+      margin-bottom: 1rem;
+    }
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    @media (max-width: 767px) {
+      .hamburger-btn {
+        display: block;
+      }
+      nav.desktop-menu {
+        display: none;
+      }
+    }
+    @media (min-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+    }
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 4rem 1rem;
+    }
+    .section-container img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 8px;
+    }
+    .section-text {
+      max-width: 500px;
+    }
+    .section-text h2 {
+      font-size: 2rem;
+      color: #0a0f2c;
+      margin-bottom: 1rem;
+    }
+    .section-text p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    .separator {
+      width: 80px;
+      height: 4px;
+      background-color: #f1416c;
+      margin: 3rem auto;
+      border-radius: 2px;
+    }
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+    .feature-box {
+      background: #f8f9fc;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .feature-box svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 1rem;
+      fill: #f1416c;
+    }
+    .custom-footer {
+      background-color: #101432;
+      color: #fff;
+      padding: 3rem 0 2rem;
+      font-size: 0.95rem;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .footer-brand h2 {
+      color: #fff;
+    }
+    .footer-links h4 {
+      color: #90caf9;
+      margin-bottom: 0.8rem;
+    }
+    .footer-links ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 2rem;
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div>
+        <h1 class="logo">ÉLETRE</h1>
+        <p class="slogan">"Des équipements précieux ? Un transport rigoureux."</p>
+      </div>
+      <button class="hamburger-btn" aria-label="Menu">&#9776;</button>
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+          <li><a href="../pages/zone.html">Zones</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+33617831398" class="phone-call">06 17 83 13 98</a>
+    </div>
+    <nav class="nav-menu">
+      <button class="close-btn">&times;</button>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages/services.html">Services</a></li>
+        <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+        <li><a href="../pages/zone.html">Zones</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-container">
+    <img src="../images/transport-equipement.jpg" alt="Transport équipements médicaux">
+    <div class="section-text">
+      <h2>Transport d’équipements médicaux à Paris, IDF & Province</h2>
+      <p>Le transport d’équipements médicaux exige rigueur, expertise logistique et respect absolu des normes sanitaires. Chez <strong>Eletre</strong>, nous assurons la livraison de dispositifs médicaux sensibles, matériels hospitaliers, respirateurs, incubateurs, appareils de diagnostic, et plus encore.</p>
+      <p>Nos interventions couvrent Paris, l’Île-de-France et la province, 24h/24 et 7j/7. Nos chauffeurs sont formés à la manipulation d’équipements lourds, fragiles et parfois vitaux. Chaque livraison bénéficie d’un suivi GPS en temps réel, de précautions anti-chocs et de véhicules adaptés.</p>
+      <p>Notre priorité : garantir l’arrivée en temps voulu de votre matériel en parfait état de fonctionnement, prêt à sauver des vies ou à équiper des plateaux techniques de pointe.</p>
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <section class="features-grid">
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M3 3h18v2H3V3zm2 4h14v14H5V7z"/></svg>
+      <h3>Dispositifs stériles</h3>
+      <p>Transport sécurisé pour équipements stériles et dispositifs médicaux fragiles.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 4.5 6.6 4.5 11.5S8.1 21 12 21s7.5-4.6 7.5-9.5S15.9 2 12 2z"/></svg>
+      <h3>Matériel lourd</h3>
+      <p>Équipements hospitaliers manipulés avec soin et outils de manutention adaptés.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M5 3h14v2H5zm0 4h14v14H5z"/></svg>
+      <h3>Véhicules adaptés</h3>
+      <p>Camions avec suspension renforcée et fixation pour appareils volumineux.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11 11 0 0 0 12 1z"/></svg>
+      <h3>Traçabilité GPS</h3>
+      <p>Chaque course est suivie en direct, pour une transparence totale.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2l9 4v6c0 6-4 11-9 12-5-1-9-6-9-12V6z"/></svg>
+      <h3>Livraison express</h3>
+      <p>Urgence maîtrisée : votre équipement arrive dans les délais les plus courts.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M11 11v-2h2v2h2v2h-2v2h-2v-2H9v-2z"/></svg>
+      <h3>Expertise médicale</h3>
+      <p>Connaissance approfondie du matériel et exigences hospitalières.</p>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2 class="logo">Eletre</h2>
+        <p>Transport médical sécurisé 24h/24 & 7j/7</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Demander un devis</a></li>
+          <li><a href="#">Nous contacter</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Eletre. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

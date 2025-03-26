@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Transport de produits biologiques à Paris, en Île-de-France et en province. Sécurité, traçabilité, conformité 24/7.">
+  <title>Transport de produits biologiques - Eletre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.8;
+    }
+    header {
+      background-color: #0a0f2c;
+      color: #fff;
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f1416c;
+    }
+    .slogan {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 0.2rem;
+    }
+    nav.desktop-menu ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav.desktop-menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .phone-call {
+      background-color: #f1416c;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .hamburger-btn {
+      display: none;
+      background: #f1416c;
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 300px;
+      height: 100%;
+      background: #0a0f2c;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+      padding-top: 4rem;
+    }
+    .nav-menu.open {
+      transform: translateX(0);
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 1rem 2rem;
+    }
+    .nav-menu li {
+      margin-bottom: 1rem;
+    }
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    @media (max-width: 767px) {
+      .hamburger-btn {
+        display: block;
+      }
+      nav.desktop-menu {
+        display: none;
+      }
+    }
+    @media (min-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+    }
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 1rem;
+      gap: 3rem;
+    }
+    .section-container img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 8px;
+    }
+    .section-text {
+      max-width: 550px;
+    }
+    .section-text h2 {
+      font-size: 2rem;
+      color: #0a0f2c;
+      margin-bottom: 1rem;
+    }
+    .section-text p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    .separator {
+      width: 80px;
+      height: 4px;
+      background-color: #f1416c;
+      margin: 3rem auto;
+      border-radius: 2px;
+    }
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+    .feature-box {
+      background: #f8f9fc;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .feature-box svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 1rem;
+      fill: #f1416c;
+    }
+    .custom-footer {
+      background-color: #101432;
+      color: #fff;
+      padding: 3rem 0 2rem;
+      font-size: 0.95rem;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .footer-brand h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+    }
+    .footer-links h4 {
+      margin-bottom: 1rem;
+      color: #90caf9;
+    }
+    .footer-links ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 2rem;
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div>
+        <h1 class="logo">ÉLETRE</h1>
+        <div class="slogan">"Fiable, rapide, humain, pour un transport médical serein."</div>
+      </div>
+      <button class="hamburger-btn" aria-label="Ouvrir le menu">&#9776;</button>
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+          <li><a href="../pages/zone.html">Zones</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+33617831398" class="phone-call">06 17 83 13 98</a>
+    </div>
+    <nav class="nav-menu">
+      <button class="close-btn" aria-label="Fermer le menu">&times;</button>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages/services.html">Services</a></li>
+        <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+        <li><a href="../pages/zone.html">Zones</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECTION IMAGE + TEXTE -->
+  <section class="section-container">
+    <img src="../images/transport-prelevements.jpg" alt="transport-prelevements">
+    <div class="section-text">
+      <h2>Transport de produits biologiques à Paris, en IDF & en Province</h2>
+      <p>
+        Le transport de produits biologiques exige une rigueur absolue et un savoir-faire pointu. Chez <strong>Eletre</strong>, nous assurons le transport sécurisé de prélèvements sanguins, tissus, échantillons biologiques et fluides médicaux, dans le strict respect des normes sanitaires.
+      </p>
+      <p>
+        Que vous soyez un laboratoire d’analyses, un centre hospitalier ou une clinique, nous intervenons 24h/24 à Paris, en Île-de-France et sur l’ensemble du territoire pour garantir la traçabilité, la température contrôlée et l’intégrité des produits biologiques transportés.
+      </p>
+      <p>
+        Grâce à nos véhicules adaptés, à notre personnel formé aux exigences du transport ADR (classe 6.2), et à un suivi GPS en temps réel, chaque mission est réalisée avec réactivité, sécurité et professionnalisme.
+      </p>
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <!-- SECTION 6 BOÎTES -->
+  <section class="features-grid">
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2v1.6l1.6-1.6 1.4 1.4L15.4 7H17a2 2 0 0 1 0 4h-1.6l1.6 1.6-1.4 1.4L14 12.4V14a2 2 0 0 1-4 0v-1.6l-1.6 1.6-1.4-1.4L8.6 11H7a2 2 0 0 1 0-4h1.6L7 5.4l1.4-1.4L10 5.6V4a2 2 0 0 1 2-2z"/></svg>
+      <h3>Disponibilité 24h/24</h3>
+      <p>Transport en urgence jour et nuit, sans interruption.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2C9 6 7 9 7 12a5 5 0 0 0 10 0z"/></svg>
+      <h3>Température contrôlée</h3>
+      <p>Respect des plages de température exigées (2–8°C ou ambiante).</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M3 3h18v2H3V3zm2 4h14v14H5V7z"/></svg>
+      <h3>Conformité ADR</h3>
+      <p>Transport conforme à la réglementation pour matières infectieuses (UN3373).</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11 11 0 0 0 12 1z"/></svg>
+      <h3>Traçabilité GPS</h3>
+      <p>Géolocalisation de chaque course, preuve de livraison horodatée.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2l9 4v6c0 5.5-4 10.7-9 12-5-1.3-9-6.5-9-12V6z"/></svg>
+      <h3>Emballages agréés</h3>
+      <p>Utilisation de contenants homologués pour garantir l'intégrité des échantillons.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M11 11v-2h2v2h2v2h-2v2h-2v-2H9v-2z"/></svg>
+      <h3>Personnel formé</h3>
+      <p>Agents qualifiés et sensibilisés aux risques biologiques et médicaux.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="custom-footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2 class="logo">Eletre</h2>
+        <p>Transport médical sécurisé 24h/24 & 7j/7</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Demander un devis</a></li>
+          <li><a href="#">Nous contacter</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Eletre. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

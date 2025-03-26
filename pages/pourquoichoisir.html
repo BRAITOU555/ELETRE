@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pourquoi choisir ÉLETRE pour le transport médical à Paris, en Île-de-France et en province. Fiabilité, conformité, sécurité 24h/24.">
+  <title>Pourquoi choisir ÉLETRE - Transport médical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.8;
+    }
+    header {
+      background-color: #0a0f2c;
+      color: #fff;
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f1416c;
+    }
+    .slogan {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 0.2rem;
+    }
+    nav.desktop-menu ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav.desktop-menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .phone-call {
+      background-color: #f1416c;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .hamburger-btn {
+      display: none;
+      background:#0a0f2C;
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 300px;
+      height: 100%;
+      background: #0a0f2c;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+      padding-top: 4rem;
+    }
+    .nav-menu.open {
+      transform: translateX(0);
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 1rem 2rem;
+    }
+    .nav-menu li {
+      margin-bottom: 1rem;
+    }
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    @media (max-width: 767px) {
+      .hamburger-btn {
+        display: block;
+      }
+      nav.desktop-menu {
+        display: none;
+      }
+    }
+    @media (min-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+    }
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 1rem;
+      gap: 3rem;
+    }
+    .section-container img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 8px;
+    }
+    .section-text {
+      max-width: 550px;
+    }
+    .section-text h2 {
+      font-size: 2rem;
+      color: #0a0f2c;
+      margin-bottom: 1rem;
+    }
+    .section-text p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    .separator {
+      width: 80px;
+      height: 4px;
+      background-color: #f1416c;
+      margin: 3rem auto;
+      border-radius: 2px;
+    }
+    .custom-footer {
+      background-color: #101432;
+      color: #fff;
+      padding: 3rem 0 2rem;
+      font-size: 0.95rem;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .footer-brand h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+    }
+    .footer-links h4 {
+      margin-bottom: 1rem;
+      color: #90caf9;
+    }
+    .footer-links ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 2rem;
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div>
+        <h1 class="logo">ÉLETRE</h1>
+        <div class="slogan">"Fiable, rapide, humain, pour un transport médical serein."</div>
+      </div>
+      <button class="hamburger-btn" aria-label="Ouvrir le menu">&#9776;</button>
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+          <li><a href="../pages/zone.html">Zones</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+33617831398" class="phone-call">06 17 83 13 98</a>
+    </div>
+    <nav class="nav-menu">
+      <button class="close-btn" aria-label="Fermer le menu">&times;</button>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages/services.html">Services</a></li>
+        <li><a href="pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+        <li><a href="../pages/zone.html">Zones</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECTION INTRO - POURQUOI CHOISIR ÉLETRE -->
+  <section class="section-container">
+    <img src="../images/pourquoi-choisir-eletre.jpg" alt="transport médical Eletre">
+    <div class="section-text">
+      <h2>Pourquoi choisir <span style="color:#f1416c;">ÉLETRE</span> pour vos transports médicaux ?</h2>
+      <p>
+        Dans un secteur aussi sensible que le <strong>transport médical urgent</strong>, le choix du bon partenaire est crucial. 
+        <strong><span style="color:#f1416c;">ÉLETRE</span></strong> s’impose aujourd’hui comme la référence en matière de <em>transport de sang, greffes, prélèvements biologiques, matériel médicalisé</em> et d’acheminement de produits de santé dans toute la France.
+      </p>
+      <p>
+        Que vous soyez basé à <strong>Paris</strong>, en <strong>Île-de-France</strong> ou en <strong>province</strong>, notre équipe spécialisée vous accompagne 24h/24 avec des solutions de transport fiables, sécurisées et conformes aux plus hautes exigences.
+      </p>
+      <p>
+        Découvrez pourquoi les établissements hospitaliers, laboratoires, cliniques, centres de recherche et professionnels de santé nous font confiance chaque jour pour leurs <strong>courses médicales urgentes</strong> et leur <strong>logistique biologique</strong>.
+      </p>
+    </div>
+  </section>
+  <div class="separator"></div>
+
+  <section class="section-container">
+  <img src="../images/personnel-certifie.jpg" alt="Personnel formé et certifié">
+  <div class="section-text">
+    <h2>Un personnel formé et certifié</h2>
+    <p>
+      La qualité de nos services repose avant tout sur les femmes et les hommes qui composent notre équipe. Chez <strong>ÉLETRE</strong>, chaque agent de transport est rigoureusement sélectionné et suit une formation continue spécifique au <strong>transport de matières biologiques</strong> et au <strong>transport médical sécurisé</strong>.
+    </p>
+    <p>
+      Nos coursiers sont formés aux protocoles sanitaires, aux gestes d’urgence et au maniement des dispositifs de maintien de la chaîne du froid. Ils maîtrisent les réglementations liées au <strong>transport de produits de santé</strong>, notamment les normes <strong>ADR classe 6.2</strong> et les prescriptions concernant les <strong>colis UN3373</strong>.
+    </p>
+    <p>
+      Cette expertise humaine est au cœur de la fiabilité d’ÉLETRE, garantissant à nos clients un niveau d’exigence constant, que ce soit pour une course à Paris intra-muros ou un acheminement complexe vers la province.
+    </p>
+  </div>
+</section>
+<div class="separator"></div>
+
+<section class="section-container">
+  <img src="../images/expertise-transport-medical.jpg" alt="Expertise transport médical">
+  <div class="section-text">
+    <h2>Une expertise unique en transport médical</h2>
+    <p>
+      Forts de notre spécialisation exclusive dans le <strong>transport médical urgent</strong>, nous avons développé un savoir-faire reconnu en <strong>logistique hospitalière</strong>, <strong>transport de sang</strong>, de <strong>greffes d’organes</strong>, de <strong>produits pharmaceutiques sensibles</strong> et de matériel de diagnostic.
+    </p>
+    <p>
+      Nos solutions logistiques sont adaptées aux réalités du terrain, que ce soit pour livrer un laboratoire en urgence en Île-de-France, collecter des échantillons dans un centre de soins à Lyon ou acheminer un organe prélevé depuis Marseille vers un hôpital parisien.
+    </p>
+    <p>
+      Grâce à une parfaite coordination avec les établissements de santé, à une technologie embarquée moderne (suivi GPS, alertes de température, preuve de livraison horodatée) et à une capacité de réaction immédiate, ÉLETRE garantit un service premium sur l’ensemble du territoire.
+    </p>
+  </div>
+</section>
+<div class="separator"></div>
+
+<section class="section-container">
+  <img src="../images/zones-desservies-eletre.jpg" alt="Zones desservies transport médical">
+  <div class="section-text">
+    <h2>Une couverture complète : Paris, Île-de-France & province</h2>
+    <p>
+      Que vous soyez un établissement basé dans le cœur de <strong>Paris</strong>, en grande <strong>couronne francilienne</strong> ou en région, <strong>ÉLETRE</strong> est votre partenaire dédié pour tous vos <strong>transports médicaux</strong>.
+    </p>
+    <p>
+      Notre couverture inclut : <strong>Paris intra-muros</strong>, les départements de la <strong>Petite et Grande Couronne</strong> (75, 77, 78, 91, 92, 93, 94, 95), mais aussi les grandes villes comme <strong>Lyon, Lille, Bordeaux, Marseille, Strasbourg</strong> ou encore <strong>Toulouse</strong>.
+    </p>
+    <p>
+      Grâce à notre réseau réactif et notre flotte géolocalisée, nous intervenons rapidement pour des <strong>courses express</strong> comme pour des <strong>tournées planifiées</strong>. Peu importe votre localisation, ÉLETRE garantit un niveau d’exigence homogène partout en France.
+    </p>
+  </div>
+</section>
+</section>
+<div class="separator"></div>
+
+<section class="section-container">
+  <img src="../images/securite-donnees-eletre.jpg" alt="Confidentialité et sécurité des données médicales">
+  <div class="section-text">
+    <h2>Confidentialité & sécurité des données médicales</h2>
+    <p>
+      Le respect de la <strong>confidentialité médicale</strong> est une priorité absolue pour <strong>ÉLETRE</strong>. Chaque transport est réalisé dans un strict respect du <strong>secret professionnel</strong> et des réglementations relatives à la protection des données sensibles, notamment les normes RGPD.
+    </p>
+    <p>
+      Nos agents sont formés à la discrétion, au traitement éthique des informations de santé et à la gestion de documents sensibles. L’ensemble des échanges et des preuves de livraison sont sécurisés et accessibles uniquement aux personnes autorisées.
+    </p>
+    <p>
+      En tant que partenaire de confiance pour de nombreux hôpitaux et laboratoires en <strong>Île-de-France</strong> et en province, nous garantissons une traçabilité rigoureuse et une <strong>sécurité des données</strong> à chaque étape du processus.
+    </p>
+  </div>
+</section>
+<div class="separator"></div>
+
+<section class="section-container">
+  <img src="../images/technologie-embarquee.jpg" alt="Technologie embarquée transport médical">
+  <div class="section-text">
+    <h2>Technologie embarquée & traçabilité en temps réel</h2>
+    <p>
+      Tous nos véhicules sont équipés de systèmes de <strong>géolocalisation GPS</strong>, de <strong>capteurs de température</strong> et de solutions de traçabilité avancée. Cela permet à nos clients de suivre leurs envois en temps réel et de recevoir des notifications à chaque étape clé.
+    </p>
+    <p>
+      Cette technologie garantit non seulement la sécurité des produits transportés, mais aussi la transparence, avec des <strong>preuves de livraison horodatées</strong>, des alertes de température, et une conservation numérique des données de mission.
+    </p>
+    <p>
+      Que ce soit pour une livraison de <strong>produits sanguins à Paris</strong> ou un acheminement de <strong>matériel médical en province</strong>, ÉLETRE met la technologie au service de la santé.
+    </p>
+  </div>
+</section>
+<div class="separator"></div>
+
+<section class="section-container">
+  <img src="../images/partenariats-hopitaux.jpg" alt="Partenariats établissements santé">
+  <div class="section-text">
+    <h2>Partenariats avec les établissements de santé</h2>
+    <p>
+      Depuis sa création, <strong>ÉLETRE</strong> développe des <strong>partenariats solides avec les établissements de santé</strong> publics et privés. Notre expérience et notre professionnalisme nous ont permis de devenir le transporteur de référence pour plusieurs <strong>hôpitaux parisiens</strong>, <strong>cliniques privées</strong> et <strong>laboratoires d’analyses médicales</strong>.
+    </p>
+    <p>
+      En collaborant étroitement avec les responsables logistiques et médicaux, nous adaptons nos prestations aux contraintes spécifiques de chaque structure, tout en respectant les impératifs de rapidité, d’hygiène et de sécurité.
+    </p>
+    <p>
+      Grâce à notre fiabilité, notre réactivité et notre connaissance du terrain, nous sommes fiers d’être un acteur reconnu dans le <strong>transport médical à Paris, en Île-de-France et partout en province</strong>.
+    </p>
+  </div>
+</section>
+<div class="separator"></div>
+
+<footer class="custom-footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2 class="logo">Eletre</h2>
+        <p>Transport médical sécurisé 24h/24 & 7j/7</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Demander un devis</a></li>
+          <li><a href="#">Nous contacter</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Eletre. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

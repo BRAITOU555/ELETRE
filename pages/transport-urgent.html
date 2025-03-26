@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Transport urgent médicalisé à Paris, en Île-de-France et partout en France. Transport de sang, greffes, personnel soignant et produits biologiques. Disponible 24h/24 – 7j/7.">
+  <meta name="keywords" content="transport urgent médicalisé, transport greffe, transport sang, transport personnel médical, transport produits biologiques, Paris, Île-de-France, transport médical d'urgence, logistique santé, transport médical rapide">
+  <title>Transport urgent médicalisé - Eletre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #0a0f2c;
+      color: #fff;
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #f1416c;
+    }
+
+    .slogan {
+      font-size: 0.9rem;
+      color: #ddd;
+      margin-top: 0.2rem;
+    }
+
+    nav.desktop-menu ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav.desktop-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .phone-call {
+      background-color: #f1416c;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .hamburger-btn {
+      display: none;
+      background: #f1416c;
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 300px;
+      height: 100%;
+      background: #0a0f2c;
+      color: #fff;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 9999;
+      padding-top: 4rem;
+    }
+
+    .nav-menu.open {
+      transform: translateX(0);
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      padding: 1rem 2rem;
+    }
+
+    .nav-menu li {
+      margin-bottom: 1rem;
+    }
+
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 1rem;
+      gap: 3rem;
+    }
+
+    .section-container img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .section-text {
+      max-width: 550px;
+    }
+
+    .section-text h2 {
+      font-size: 2rem;
+      color: #0a0f2c;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-text p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    .separator {
+      width: 80px;
+      height: 4px;
+      background-color: #f1416c;
+      margin: 3rem auto;
+      border-radius: 2px;
+    }
+
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    .feature-box {
+      background: #f8f9fc;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .feature-box svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 1rem;
+      fill: #f1416c;
+    }
+
+    .feature-box h3 {
+      color: #0a0f2c;
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+    }
+
+    .feature-box p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #0a0f2c;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      margin-top: 3rem;
+    }
+
+    footer h2.logo {
+      color: #f1416c;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer a {
+      color: #90caf9;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger-btn {
+        display: block;
+      }
+      nav.desktop-menu {
+        display: none;
+      }
+      .section-container {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div>
+        <h1 class="logo">ÉLETRE</h1>
+        <p class="slogan">"Urgence vitale, réponse totale."</p>
+      </div>
+      <button class="hamburger-btn">&#9776;</button>
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+          <li><a href="../pages/zone.html">Zones</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+33617831398" class="phone-call">06 17 83 13 98</a>
+    </div>
+    <nav class="nav-menu">
+      <button class="close-btn">&times;</button>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages/services.html">Services</a></li>
+        <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+        <li><a href="../pages/zone.html">Zones</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-container">
+    <img src="../images/transport-urgent.jpg" alt="Transport urgent médicalisé">
+    <div class="section-text">
+      <h2>Transport urgent médicalisé à Paris, en IDF et en province</h2>
+      <p>Le <strong>transport urgent médicalisé</strong> est au cœur des soins vitaux. Que ce soit pour livrer un organe, un concentré de sang, des médicaments rares, ou transporter du personnel soignant, chaque minute compte. C’est pourquoi <strong>Eletre</strong> garantit une réponse immédiate, une logistique de précision, et une sécurité totale pour chaque course urgente.</p>
+      <p>Nous intervenons 24h/24 et 7j/7 à Paris, en Île-de-France et dans toute la France. Nos chauffeurs habilités, nos véhicules sanitaires spécialisés et nos protocoles stricts assurent un transport conforme aux attentes des hôpitaux, cliniques, laboratoires et centres de transplantation.</p>
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <section class="features-grid">
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M11 11v-2h2v2h2v2h-2v2h-2v-2H9v-2h2z"/></svg>
+      <h3>Réactivité 24h/24</h3>
+      <p>Une intervention express pour toutes urgences médicales à Paris et en province.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2C9 6 7 9 7 12a5 5 0 0 0 10 0z"/></svg>
+      <h3>Chaîne du froid maîtrisée</h3>
+      <p>Transport sous température dirigée pour sang, greffes et échantillons sensibles.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M3 3h18v2H3V3z"/></svg>
+      <h3>Conformité hospitalière</h3>
+      <p>Normes ADR, stérilisation, emballages agréés, personnel formé à la santé.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11z"/></svg>
+      <h3>Traçabilité en temps réel</h3>
+      <p>Suivi GPS de chaque mission, avec alertes et rapports personnalisés.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M12 2l9 4v6c0 6-4 10-9 12-5-2-9-6-9-12V6z"/></svg>
+      <h3>Transport d'organes & greffes</h3>
+      <p>Livraison rapide, prioritaire, dans le respect absolu des délais chirurgicaux.</p>
+    </div>
+    <div class="feature-box">
+      <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+      <h3>Personnel médicalisé</h3>
+      <p>Transport de médecins, infirmiers, urgentistes pour missions sanitaires critiques.</p>
+    </div>
+  </section>
+
+  <footer>
+<!-- FOOTER -->
+<footer class="custom-footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2 class="logo">Eletre</h2>
+        <p>Transport médical sécurisé 24h/24 & 7j/7</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Demander un devis</a></li>
+          <li><a href="#">Nous contacter</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Eletre. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

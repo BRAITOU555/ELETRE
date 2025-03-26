@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Eletre - Transport médical sensible : greffes, sang, matériel médicalisé, organes. Disponible 24/7." />
+  <title>Életre - Transport médical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #0a0f2C;
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .logo-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #f1416c;
+    }
+
+    .slogan {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #eee;
+      margin-top: 0.2rem;
+    }
+
+    nav.menu ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav.menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .phone-call {
+      background-color: #f1416c;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 300px;
+      height: 100%;
+      background: #0a0f2c;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 9999;
+      padding-top: 4rem;
+    }
+
+    .nav-menu.open {
+      transform: translateX(0);
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      padding: 1rem 2rem;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      display: block;
+      margin: 1rem 0;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(to right, #f4f8ff, #e7f0ff);
+      padding: 4rem 0;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #1a237e;
+    }
+
+    .hero h2 span {
+      color: #007bff;
+    }
+
+    .tagline {
+      color: #007bff;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 1rem 1.8rem;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+    }
+
+    /* SERVICES */
+    .services {
+      padding: 4rem 0;
+    }
+
+    .sante-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #1a237e;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-box {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .service-box h3 {
+      margin: 1rem 0 0.5rem;
+      color: #1a237e;
+    }
+
+    .service-box p {
+      padding: 0 1rem 1rem;
+    }
+
+    .btn-en-savoir-plus {
+      margin: 1rem auto 1.5rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #f1416c;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn-en-savoir-plus:hover {
+      background-color: #c92c50;
+    }
+
+    /* ABOUT */
+    .about-section {
+      background: #f1f5ff;
+      padding: 4rem 0;
+    }
+
+    .about-text {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-text h2 {
+      color: #1a237e;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    /* FOOTER */
+    .custom-footer {
+      background-color: #101432;
+      color: white;
+      padding: 3rem 0 2rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .footer-brand h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav.menu {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero-content {
+        flex-direction: column;
+      }
+
+      .service-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-flex">
+      <div class="logo-block">
+        <h1 class="logo">ÉLETRE</h1>
+        <p class="slogan">"Des greffes en chemin, des cœurs entre nos mains."</p>
+      </div>
+      <button class="menu-toggle">&#9776;</button>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+          <li><a href="pages/zone.html">Zones</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+33617831398" class="phone-call">06 17 83 13 98</a>
+    </div>
+    <nav class="nav-menu">
+      <button class="close-btn">&times;</button>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="pages/services.html">Services</a></li>
+        <li><a href="pages/pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+        <li><a href="pages/zone.html">Zones</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="tagline">CONFIANCE | RÉACTIVITÉ | LIVRAISON SÉCURISÉE</p>
+          <h2>Le spécialiste du <span>transport médical</span><br>& livraisons de matériel sensible</h2>
+          <p class="description">
+            Eletre assure le transport urgent et sécurisé de <strong>greffes</strong>, <strong>poches de sang</strong>,
+            <strong>dispositifs médicaux stériles</strong> et <strong>échantillons biologiques</strong>.
+            Disponible <strong>24h/24 et 7j/7</strong>, notre service garantit une <strong>traçabilité complète</strong>,
+            une <strong>température maîtrisée</strong> et une <strong>livraison express</strong> dans toute la France et en Europe.
+          </p>
+          <a href="#" class="btn">Demander un devis</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/transportdesang.jpg" alt="Transport médical">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services container">
+    <h2 class="sante-title">Nos services de transport médical</h2>
+    <div class="service-list">
+      <div class="service-box">
+        <img src="images/transport-sang.jpg" alt="Transport de sang">
+        <h3>Transport de sang</h3>
+        <p>Livraison express de poches de sang et dérivés.</p>
+        <a href="#" class="btn-en-savoir-plus">En savoir plus</a>
+      </div>
+      <div class="service-box">
+        <img src="images/transport-greffe.jpg" alt="Transport de greffes">
+        <h3>Transport de greffes</h3>
+        <p>Greffons, organes et tissus vitaux 24h/24.</p>
+        <a href="#" class="btn-en-savoir-plus">En savoir plus</a>
+      </div>
+      <div class="service-box">
+        <img src="images/transport-equipement.jpg" alt="Équipements médicaux">
+        <h3>Équipement médicalisé</h3>
+        <p>Dispositifs stériles pour hôpitaux et cliniques.</p>
+        <a href="#" class="btn-en-savoir-plus">En savoir plus</a>
+      </div>
+      <div class="service-box">
+        <img src="images/equipemedical.jpg" alt="Transport d'équipe médicalisée">
+        <h3>Personnel médicalisé</h3>
+        <p>Déplacement rapide et sécurisé de professionnels de santé pour interventions urgentes ou programmées.</p>
+        <a href="transport-equipe.html" class="btn-en-savoir-plus">En savoir plus</a>
+      </div>
+        <div class="service-box">
+          <img src="images/transport-prelevements.jpg" alt="Produits biologiques">
+          <h3>Produits biologiques</h3>
+          <p>Collecte et transport d'échantillons biologiques vers laboratoires agréés.</p>
+          <a href="transport-produit-biologiques.html" class="btn-en-savoir-plus">En savoir plus</a>
+        </div>
+        <div class="service-box">
+          <img src="images/transport-urgent.jpg" alt="Transport médical urgent 24/7">
+          <h3>Transport urgent</h3>
+          <p>Prise en charge immédiate pour les missions critiques, 24h/24 – 7j/7.</p>
+          <a href="transport-urgent.html" class="btn-en-savoir-plus">En savoir plus</a>
+        </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-text container">
+      <h2>Expert du transport médical sensible</h2>
+      <p><strong>Eletre</strong> est un acteur reconnu à Paris et en Île-de-France pour son expertise dans le transport médical sensible, urgent et maîtrisé.</p>
+      <p>De jour comme de nuit, nos chauffeurs formés assurent la livraison dans des conditions optimales, en respectant toutes les normes médicales en vigueur.</p>
+      <p>Confiez-nous vos urgences critiques : nous intervenons rapidement, avec traçabilité, sécurité et discrétion.</p>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2 class="logo">Eletre</h2>
+        <p>Transport médical sécurisé 24h/24 & 7j/7</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Demander un devis</a></li>
+          <li><a href="#">Nous contacter</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Eletre. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

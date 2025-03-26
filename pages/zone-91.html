@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Transport médicalisé dans l'Essonne (91) : greffes, sang, médicaments, personnel de santé. Interventions urgentes à Évry, Massy, Corbeil-Essonnes, Palaiseau et dans tout le 91.">
+  <meta name="keywords" content="transport médical 91, transport sanitaire Essonne, greffes Essonne, sang 91, urgence médicale 91, ambulance privée 91, transport de laboratoire 91, Évry, Corbeil, Massy, Palaiseau">
+  <title>Transport médicalisé dans l'Essonne (91) - Urgences & Logistique - ÉLETRE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0a0f2c;
+      color: #fff;
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .container {
+      width: 95%;
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .left-part {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f1416c;
+    }
+    .slogan {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #eee;
+    }
+    nav.desktop-menu ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+    }
+    nav.desktop-menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hamburger-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 300px;
+      height: 100%;
+      background: #0a0f2c;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+      padding-top: 4rem;
+    }
+    .nav-menu.open {
+      transform: translateX(0);
+    }
+    .nav-menu ul {
+      list-style: none;
+      padding: 1rem 2rem;
+    }
+    .nav-menu li {
+      margin-bottom: 1rem;
+    }
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .hamburger-btn {
+        display: block;
+      }
+      nav.desktop-menu {
+        display: none;
+      }
+    }
+    .phone-call {
+      background-color: #f1416c;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .section-container {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-text h1 {
+      font-size: 2.4rem;
+      color: #0a0f2c;
+    }
+    .section-text p {
+      font-size: 1.1rem;
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+    .icon-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .icon-box {
+      flex: 1 1 250px;
+      background: #f8f9fc;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .icon-box img {
+      width: 50px;
+      margin-bottom: 1rem;
+    }
+    .custom-footer {
+      background-color: #101432;
+      color: #fff;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+    }
+    .footer-wrapper {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .footer-brand h2 {
+      color: #f1416c;
+    }
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="left-part">
+        <h1 class="logo">ÉLETRE</h1>
+        <p class="slogan">"ÉLETRE, l'urgence maîtrisée, la vie préservée."</p>
+      </div>
+      <button class="hamburger-btn">&#9776;</button>
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir ÉLETRE ?</a></li>
+          <li><a href="../pages/zone.html">Zones</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+33617831398" class="phone-call">06 17 83 13 98</a>
+    </div>
+
+    <nav class="nav-menu">
+      <button class="close-btn">&times;</button>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages/services.html">Services</a></li>
+        <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir ÉLETRE ?</a></li>
+        <li><a href="../pages/zone.html">Zones</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-container">
+    <div class="section-text">
+      <h1>Transport médicalisé dans l'Essonne (91) – Soins, sécurité et urgence</h1>
+      <p>Avec <strong>ÉLETRE</strong>, vous bénéficiez d’un service de <strong>transport médicalisé dans l’Essonne</strong> à la hauteur des exigences sanitaires. De jour comme de nuit, nous intervenons pour la livraison de <strong>greffes, sang, médicaments sensibles</strong>, <strong>échantillons biologiques</strong> et <strong>personnels de santé</strong>.</p>
+      <p>Nos équipes couvrent toutes les communes du 91 : <strong>Évry, Corbeil-Essonnes, Massy, Palaiseau, Grigny, Savigny-sur-Orge</strong>, etc. Chaque intervention est optimisée pour garantir un acheminement rapide, fiable et conforme aux normes médicales.</p>
+      <p>Grâce à notre technologie de <strong>traçabilité GPS</strong>, nos <strong>conteneurs isothermes ADR</strong> et notre <strong>expertise métier</strong>, ÉLETRE offre une solution complète de logistique médicale adaptée aux hôpitaux, cliniques, laboratoires et structures spécialisées.</p>
+
+      <div class="icon-row">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/heart-health.png" alt="Greffes">
+          <h3>Organes & greffes</h3>
+          <p>Transport sous protocole, sécurisé et prioritaire en cas d'urgence vitale.</p>
+        </div>
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/blood.png" alt="Sang">
+          <h3>Sang & dérivés</h3>
+          <p>Livraison urgente vers les centres de soins et transfusion de l’Essonne.</p>
+        </div>
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/pill.png" alt="Médicaments">
+          <h3>Médicaments thermosensibles</h3>
+          <p>Transport à température contrôlée de traitements critiques.</p>
+        </div>
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/stethoscope.png" alt="Soignants">
+          <h3>Personnel de santé</h3>
+          <p>Déplacements d’infirmiers, techniciens et équipes d’intervention.</p>
+        </div>
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/microscope.png" alt="Biologie">
+          <h3>Prélèvements biologiques</h3>
+          <p>Livraisons rapides vers laboratoires et plateformes d’analyse agréées.</p>
+        </div>
+      </div>
+
+      <p>Pour chaque mission urgente ou planifiée, <strong>ÉLETRE</strong> s’engage à une qualité de service irréprochable. Contactez-nous pour tous vos <strong>transports sanitaires dans l’Essonne (91)</strong> : nous sommes à votre écoute 24h/24.</p>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+    <div class="footer-wrapper">
+      <div class="footer-brand">
+        <h2>ÉLETRE</h2>
+        <p>Transport médical sécurisé 24h/24 & 7j/7</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="#">Demander un devis</a></li>
+          <li><a href="#contact">Nous contacter</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" style="text-align:center; margin-top:2rem; font-size:0.85rem; color:#ccc">
+      <p>&copy; 2025 ÉLETRE. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.hamburger-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    menuToggle?.addEventListener('click', () => navMenu.classList.add('open'));
+    closeBtn?.addEventListener('click', () => navMenu.classList.remove('open'));
+  </script>
+</body>
+</html>

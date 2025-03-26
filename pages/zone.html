@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Zones d'intervention d'Életre - Transport médical à Paris et en Île-de-France." />
+  <title>Zones desservies - Életre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #0a0f2C;
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .logo-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #f1416c;
+    }
+
+    .slogan {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #eee;
+      margin-top: 0.2rem;
+    }
+
+    nav.menu ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav.menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .phone-call {
+      background-color: #f1416c;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 300px;
+      height: 100%;
+      background: #0a0f2c;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 9999;
+      padding-top: 4rem;
+    }
+
+    .nav-menu.open {
+      transform: translateX(0);
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      padding: 1rem 2rem;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      display: block;
+      margin: 1rem 0;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* ZONES */
+    .zones-section {
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .zones-section h1 {
+      font-size: 2.2rem;
+      color: #1a237e;
+      margin-bottom: 1rem;
+    }
+
+    .zones-section p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .zones-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .zone-box {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1a237e;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .zone-box:hover {
+      background-color: #e7f0ff;
+    }
+
+    /* FOOTER */
+    .custom-footer {
+      background-color: #101432;
+      color: white;
+      padding: 3rem 0 2rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .footer-brand h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav.menu {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .zones-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .zones-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .zone-box {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-flex">
+      <div class="logo-block">
+        <h1 class="logo">ÉLETRE</h1>
+        <p class="slogan">"Des greffes en chemin, des cœurs entre nos mains."</p>
+      </div>
+      <button class="menu-toggle">&#9776;</button>
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+          <li><a href="zone.html">Zones</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+33617831398" class="phone-call">06 17 83 13 98</a>
+    </div>
+    <nav class="nav-menu">
+      <button class="close-btn">&times;</button>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pourquoichoisir.html">Pourquoi choisir Életre?</a></li>
+        <li><a href="zone.html">Zones</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="zones-section container">
+    <h1>Nos zones d’intervention</h1>
+    <p>
+      Életre intervient rapidement dans tout Paris, en Île-de-France et dans les départements limitrophes.
+      Cliquez sur votre département pour découvrir nos services de transport médical localisés.
+    </p>
+
+    <div class="zones-grid">
+      <a href="paris.html" class="zone-box">75 - Paris</a>
+      <a href="zone-77.html" class="zone-box">77 - Seine-et-Marne</a>
+      <a href="zone-78.html" class="zone-box">78 - Yvelines</a>
+      <a href="zone-91.html" class="zone-box">91 - Essonne</a>
+      <a href="zone-92.html" class="zone-box">92 - Hauts-de-Seine</a>
+      <a href="zone-93.html" class="zone-box">93 - Seine-Saint-Denis</a>
+      <a href="zone-94.html" class="zone-box">94 - Val-de-Marne</a>
+      <a href="zone-95.html" class="zone-box">95 - Val-d’Oise</a>
+    </div>
+  </section>
+
+  <footer class="custom-footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2 class="logo">Eletre</h2>
+        <p>Transport médical sécurisé 24h/24 & 7j/7</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="#">Demander un devis</a></li>
+          <li><a href="#">Nous contacter</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Eletre. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>
