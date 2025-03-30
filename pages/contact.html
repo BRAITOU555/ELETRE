@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - ÉLETRE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+    body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background-color: #0a0f2c; color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    .header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .logo-block { display: flex; flex-direction: column; }
+    .logo { font-size: 1.8rem; font-weight: bold; color: #f1416c; }
+    .slogan { font-size: 0.9rem; font-style: italic; color: #eee; }
+    nav.menu ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav.menu a { color: white; text-decoration: none; font-weight: 500; }
+    .menu-toggle { display: none; background: none; border: none; color: white; font-size: 2rem; cursor: pointer; }
+    .nav-menu { position: fixed; top: 0; left: 0; width: 80%; max-width: 300px; height: 100%; background: #0a0f2c; transform: translateX(-100%); transition: transform 0.3s ease-in-out; z-index: 9999; padding-top: 4rem; }
+    .nav-menu.open { transform: translateX(0); }
+    .nav-menu ul { list-style: none; padding: 1rem 2rem; }
+    .nav-menu a { color: white; text-decoration: none; font-size: 1.1rem; display: block; margin: 1rem 0; }
+    .close-btn { position: absolute; top: 10px; right: 15px; background: none; border: none; color: white; font-size: 2rem; cursor: pointer; }
+    @media (max-width: 768px) { nav.menu { display: none; } .menu-toggle { display: block; } }
+    .phone-call { background-color: #f1416c; color: white; padding: 0.5rem 1rem; border-radius: 25px; text-decoration: none; font-weight: 600; }
+    section { max-width: 700px; margin: 3rem auto; padding: 2rem; background: white; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+    form { display: flex; flex-direction: column; }
+    label { margin-top: 1rem; font-weight: bold; }
+    input, textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; margin-top: 0.5rem; font-size: 1rem; }
+    textarea { resize: vertical; min-height: 120px; }
+    button { background: #f1416c; color: white; border: none; padding: 1rem; margin-top: 1.5rem; font-size: 1rem; border-radius: 5px; cursor: pointer; }
+    .tel { text-align: center; margin-top: 2rem; font-size: 1.1rem; }
+    footer { text-align: center; padding: 2rem; background: #101432; color: white; font-size: 0.9rem; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo-block">
+        <h1 class="logo">ÉLETRE</h1>
+        <p class="slogan">"Transport médical 24h/24 en Île-de-France"</p>
+      </div>
+      <button class="menu-toggle">&#9776;</button>
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="../pages/pourquoichoisir.html">Pourquoi ÉLETRE ?</a></li>
+          <li><a href="../pages/zone.html">Zones</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+33617831398" class="phone-call">06 17 83 13 98</a>
+    </div>
+    <nav class="nav-menu">
+      <button class="close-btn">&times;</button>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../pages/services.html">Services</a></li>
+        <li><a href="../pages/pourquoichoisir.html">Pourquoi ÉLETRE ?</a></li>
+        <li><a href="../pages/zone.html">Zones</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <p>Vous souhaitez obtenir un devis, planifier un transport médical ou poser une question ? Remplissez le formulaire ci-dessous, notre équipe vous répondra dans les plus brefs délais.</p>
+    <form action="mailto:eletreservices@gmail.com" method="POST" enctype="text/plain">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="Nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="message">Votre message :</label>
+      <textarea id="message" name="Message" required></textarea>
+
+      <button type="submit">Envoyer la demande</button>
+    </form>
+    <div class="tel">
+      📞 Téléphone : <a href="tel:+33617831398">06 17 83 13 98</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ÉLETRE - Transport médicalisé en Île-de-France
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const closeBtn = document.querySelector('.close-btn');
+    menuToggle?.addEventListener('click', () => navMenu.classList.add('open'));
+    closeBtn?.addEventListener('click', () => navMenu.classList.remove('open'));
+  </script>
+</body>
+</html>
