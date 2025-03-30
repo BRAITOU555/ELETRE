@@ -3,196 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Transport médicalisé dans le Val-de-Marne (94) : transport urgent de greffes, sang, médicaments, prélèvements biologiques, personnel de santé. Intervention 24h/24 à Créteil, Vitry-sur-Seine, Ivry et dans tout le 94.">
-  <meta name="keywords" content="transport médical Val-de-Marne, transport sanitaire 94, urgence médicale 94, greffes 94, sang Val-de-Marne, transport médicalisé 94, ambulancier 94, transport d'organes 94, prélèvements biologiques 94, Créteil, Vitry, Ivry, Saint-Maur">
-  <title>Transport médicalisé dans le Val-de-Marne (94) - Urgences & Logistique - ÉLETRE</title>
+  <meta name="description" content="Zones desservies à Paris par ÉLETRE : tous les arrondissements (1er au 20e) avec transport de sang, greffes, médicaments et urgences médicales. Service 24h/24.">
+  <meta name="keywords" content="zones transport médical Paris, transport sang Paris, Paris 1er, Paris 2e, Paris 20e, urgences médicales, logistique santé Paris, ÉLETRE">
+  <title>Zones de transport médical à Paris (75) - ÉLETRE</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #0a0f2c;
-      color: #fff;
-      padding: 1.2rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    .container {
-      width: 95%;
-      max-width: 1400px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .left-part {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #f1416c;
-    }
-    .slogan {
-      font-size: 0.9rem;
-      font-style: italic;
-      color: #eee;
-    }
-    nav.desktop-menu ul {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-      padding: 0;
-    }
-    nav.desktop-menu ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .hamburger-btn {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 2rem;
-      color: #fff;
-      cursor: pointer;
-    }
-    .nav-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 80%;
-      max-width: 300px;
-      height: 100%;
-      background: #0a0f2c;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease-in-out;
-      z-index: 1000;
-      padding-top: 4rem;
-    }
-    .nav-menu.open {
-      transform: translateX(0);
-    }
-    .nav-menu ul {
-      list-style: none;
-      padding: 1rem 2rem;
-    }
-    .nav-menu li {
-      margin-bottom: 1rem;
-    }
-    .nav-menu a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    @media (max-width: 768px) {
-      .hamburger-btn {
-        display: block;
-      }
-      nav.desktop-menu {
-        display: none;
-      }
-    }
-    .phone-call {
-      background-color: #f1416c;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 25px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    .section-container {
-      padding: 3rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .section-text h1 {
-      font-size: 2.4rem;
-      color: #0a0f2c;
-    }
-    .section-text p {
-      font-size: 1.1rem;
-      text-align: justify;
-      margin-bottom: 1.5rem;
-    }
-    .icon-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .icon-box {
-      flex: 1 1 250px;
-      background: #f8f9fc;
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-    .icon-box img {
-      width: 50px;
-      margin-bottom: 1rem;
-    }
-    .custom-footer {
-      background-color: #101432;
-      color: #fff;
-      padding: 2rem 1rem;
-      font-size: 0.95rem;
-    }
-    .footer-wrapper {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .footer-brand h2 {
-      color: #f1416c;
-    }
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
-    }
-    .footer-links a {
-      color: #fff;
-      text-decoration: none;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+    body { background-color: #fff; color: #333; line-height: 1.6; }
+    header { background-color: #0a0f2c; color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    .header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .logo-block { display: flex; flex-direction: column; }
+    .logo { font-size: 1.8rem; font-weight: bold; color: #f1416c; }
+    .slogan { font-size: 0.9rem; font-style: italic; color: #eee; }
+    nav.menu ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav.menu a { color: white; text-decoration: none; font-weight: 500; }
+    .menu-toggle { display: none; background: none; border: none; color: white; font-size: 2rem; cursor: pointer; }
+    .nav-menu { position: fixed; top: 0; left: 0; width: 80%; max-width: 300px; height: 100%; background: #0a0f2c; transform: translateX(-100%); transition: transform 0.3s ease-in-out; z-index: 9999; padding-top: 4rem; }
+    .nav-menu.open { transform: translateX(0); }
+    .nav-menu ul { list-style: none; padding: 1rem 2rem; }
+    .nav-menu a { color: white; text-decoration: none; font-size: 1.1rem; display: block; margin: 1rem 0; }
+    .close-btn { position: absolute; top: 10px; right: 15px; background: none; border: none; color: white; font-size: 2rem; cursor: pointer; }
+    .phone-call { background-color: #f1416c; color: white; padding: 0.5rem 1rem; border-radius: 25px; text-decoration: none; font-weight: 600; }
+    @media (max-width: 768px) { nav.menu { display: none; } .menu-toggle { display: block; } }
+    section { padding: 3rem 1rem; }
+    h1 { color: #0a0f2c; text-align: center; margin-bottom: 2rem; }
+    .intro-text { max-width: 800px; margin: auto; font-size: 1.1rem; text-align: center; margin-bottom: 2rem; }
+    .extra-text { max-width: 900px; margin: auto; font-size: 1.05rem; text-align: justify; margin-bottom: 2.5rem; color: #333; }
+    ul.zone-list { display: flex; flex-wrap: wrap; justify-content: center; list-style: none; gap: 1rem; padding: 0; }
+    ul.zone-list li { background: #f8f9fc; padding: 1rem 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: 0.2s; }
+    ul.zone-list li:hover { transform: translateY(-3px); }
+    ul.zone-list a { text-decoration: none; color: #f1416c; font-weight: bold; font-size: 1rem; }
+    footer { background-color: #101432; color: white; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="left-part">
+    <div class="container header-flex">
+      <div class="logo-block">
         <h1 class="logo">ÉLETRE</h1>
-        <p class="slogan">"ÉLETRE, au cœur du soin et de la précision."</p>
+        <p class="slogan">"Transport médical dans tous les arrondissements de Paris."</p>
       </div>
-      <button class="hamburger-btn">&#9776;</button>
-      <nav class="desktop-menu">
+      <button class="menu-toggle">&#9776;</button>
+      <nav class="menu">
         <ul>
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="../pages/services.html">Services</a></li>
-          <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir ÉLETRE ?</a></li>
-          <li><a href="../pages/zone.html">Zones</a></li>
+          <li><a href="../pages/pourquoichoisir.html">Pourquoi ÉLETRE ?</a></li>
+          <li><a href="zone.html">Zones</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -203,75 +61,55 @@
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../pages/services.html">Services</a></li>
-        <li><a href="../pages/pourquoichoisir.html">Pourquoi choisir ÉLETRE ?</a></li>
-        <li><a href="../pages/zone.html">Zones</a></li>
+        <li><a href="../pages/pourquoichoisir.html">Pourquoi ÉLETRE ?</a></li>
+        <li><a href="zone.html">Zones</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-    <section class="section-container">
-        <div class="section-text">
-          <h1>Transport médicalisé à Paris (75) – Urgences, logistique & santé publique</h1>
-          <p>Chez <strong>ÉLETRE</strong>, nous assurons le <strong>transport médicalisé urgent</strong> à Paris 75, 24h/24, 7j/7. Nous prenons en charge les <strong>greffes, organes, poches de sang, médicaments thermosensibles</strong>, <strong>prélèvements biologiques</strong> et le <strong>transport de personnel médical</strong>. Nos chauffeurs qualifiés interviennent dans tous les arrondissements : du <strong>1er au 20e</strong>, avec des itinéraires optimisés pour contourner les aléas de circulation.</p>
-          <p>Nous desservons les établissements majeurs de la capitale : <strong>Pitié-Salpêtrière</strong>, <strong>Georges Pompidou</strong>, <strong>Necker</strong>, <strong>Saint-Louis</strong>, <strong>Lariboisière</strong>, mais aussi les cliniques privées et laboratoires. Grâce à notre <strong>chaîne du froid maîtrisée</strong>, nos <strong>contenants ADR</strong> et notre <strong>traçabilité GPS</strong>, nous garantissons un transport 100 % conforme.</p>
-          <p>Notre objectif est simple : <strong>répondre à toutes les urgences médicales à Paris</strong> dans les meilleurs délais. Chaque intervention respecte les protocoles sanitaires stricts, et nos véhicules sont désinfectés entre chaque mission.</p>
-    
-      <div class="icon-row">
-        <div class="icon-box">
-          <img src="https://img.icons8.com/ios-filled/50/heart-health.png" alt="Organes">
-          <h3>Greffes & organes</h3>
-          <p>Transport urgent d’organes vitaux avec suivi temps réel.</p>
-        </div>
-        <div class="icon-box">
-          <img src="https://img.icons8.com/ios-filled/50/blood.png" alt="Sang">
-          <h3>Sang & dérivés</h3>
-          <p>Livraison sécurisée de poches sanguines vers centres hospitaliers.</p>
-        </div>
-        <div class="icon-box">
-          <img src="https://img.icons8.com/ios-filled/50/pill.png" alt="Médicaments">
-          <h3>Médicaments sensibles</h3>
-          <p>Maintien de la chaîne du froid pour les traitements critiques.</p>
-        </div>
-        <div class="icon-box">
-          <img src="https://img.icons8.com/ios-filled/50/stethoscope.png" alt="Personnel médical">
-          <h3>Personnel médical</h3>
-          <p>Mobilité rapide pour soignants et techniciens de santé.</p>
-        </div>
-        <div class="icon-box">
-          <img src="https://img.icons8.com/ios-filled/50/microscope.png" alt="Biologiques">
-          <h3>Prélèvements biologiques</h3>
-          <p>Collecte et dépôt vers les laboratoires agréés du 94.</p>
-        </div>
-      </div>
+  <section class="container">
+    <h1>Zones de transport médical à Paris (75)</h1>
+    <p class="intro-text">
+      Découvrez nos zones d'intervention dans la capitale. De Paris 1er à Paris 20e, ÉLETRE assure un service de transport médical réactif et sécurisé : transport de sang, d'organes, de greffons, de médicaments thermosensibles et de personnel soignant. Cliquez sur l’arrondissement souhaité pour accéder au détail du service.
+    </p>
 
-      <p>Cliniques, laboratoires, centres hospitaliers, établissements publics : <strong>ÉLETRE</strong> est votre partenaire de confiance pour vos <strong>transports médicaux dans le Val-de-Marne</strong>. Un service réactif, humain et rigoureux, disponible 24h/24 et 7j/7.</p>
+    <div class="extra-text">
+      <p>
+        Nos équipes sont formées pour répondre aux exigences des <strong>structures hospitalières de Paris</strong>. Grâce à des véhicules adaptés et une logistique optimisée, nous garantissons la <strong>prise en charge rapide et sécurisée</strong> des échantillons, traitements et équipements médicaux. Qu'il s'agisse d'un <strong>transport de greffe urgent à Paris 1er</strong>, d'une livraison de <strong>médicaments sensibles à Paris 13e</strong> ou d'une <strong>course inter-hôpitaux à Paris 20e</strong>, ÉLETRE reste votre partenaire de confiance. 
+      </p>
     </div>
+
+    <ul class="zone-list">
+      <li><a href="../villes/paris-1er-transport-de-sang.html">👉 Paris 1er</a></li>
+      <li><a href="../villes/paris-2e-transport-de-sang.html">👉 Paris 2e</a></li>
+      <li><a href="../villes/paris-3e-transport-de-sang.html">👉 Paris 3e</a></li>
+      <li><a href="../villes/paris-4e-transport-de-sang.html">👉 Paris 4e</a></li>
+      <li><a href="../villes/paris-5e-transport-de-sang.html">👉 Paris 5e</a></li>
+      <li><a href="../villes/paris-6e-transport-de-sang.html">👉 Paris 6e</a></li>
+      <li><a href="../villes/paris-7e-transport-de-sang.html">👉 Paris 7e</a></li>
+      <li><a href="../villes/paris-8e-transport-de-sang.html">👉 Paris 8e</a></li>
+      <li><a href="../villes/paris-9e-transport-de-sang.html">👉 Paris 9e</a></li>
+      <li><a href="../villes/paris-10e-transport-de-sang.html">👉 Paris 10e</a></li>
+      <li><a href="../villes/paris-11e-transport-de-sang.html">👉 Paris 11e</a></li>
+      <li><a href="../villes/paris-12e-transport-de-sang.html">👉 Paris 12e</a></li>
+      <li><a href="../villes/paris-13e-transport-de-sang.html">👉 Paris 13e</a></li>
+      <li><a href="../villes/paris-14e-transport-de-sang.html">👉 Paris 14e</a></li>
+      <li><a href="../villes/paris-15e-transport-de-sang.html">👉 Paris 15e</a></li>
+      <li><a href="../villes/paris-16e-transport-de-sang.html">👉 Paris 16e</a></li>
+      <li><a href="../villes/paris-17e-transport-de-sang.html">👉 Paris 17e</a></li>
+      <li><a href="../villes/paris-18e-transport-de-sang.html">👉 Paris 18e</a></li>
+      <li><a href="../villes/paris-19e-transport-de-sang.html">👉 Paris 19e</a></li>
+      <li><a href="../villes/paris-20e-transport-de-sang.html">👉 Paris 20e</a></li>
+    </ul>
   </section>
 
-  <footer class="custom-footer">
-    <div class="footer-wrapper">
-      <div class="footer-brand">
-        <h2>ÉLETRE</h2>
-        <p>Transport médical sécurisé 24h/24 & 7j/7</p>
-      </div>
-      <div class="footer-links">
-        <h4>Liens utiles</h4>
-        <ul>
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="#">Demander un devis</a></li>
-          <li><a href="#contact">Nous contacter</a></li>
-          <li><a href="#">Mentions légales</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom" style="text-align:center; margin-top:2rem; font-size:0.85rem; color:#ccc">
-      <p>&copy; 2025 ÉLETRE. Tous droits réservés.</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 ÉLETRE - Zones de transport médical à Paris - Tous droits réservés.</p>
   </footer>
 
   <script>
-    const menuToggle = document.querySelector('.hamburger-btn');
+    const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const closeBtn = document.querySelector('.close-btn');
     menuToggle?.addEventListener('click', () => navMenu.classList.add('open'));
