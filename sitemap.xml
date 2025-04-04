@@ -1,53 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Accueil -->
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/index.html</loc>
+  </url>
+
   <!-- Pages principales -->
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/index.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/services.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/pourquoichoisir.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/zone.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/contact.html</loc></url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/services.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/pourquoichoisir.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/zone.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/paris.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-de-sang.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-de-greffe.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-equipement.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-equipe.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-produit-biologiques.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-urgent.html</loc>
+  </url>
 
-  <!-- Pages thématiques -->
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-de-sang.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-de-greffe.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-equipement.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-equipe.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-produit-biologiques.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/transport-urgent.html</loc></url>
+  <!-- Zones Île-de-France -->
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-77.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-78.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-91.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-93.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-94.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-95.html</loc>
+  </url>
 
-  <!-- Pages géographiques (zones et arrondissements) -->
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/paris.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-77.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-78.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-91.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-93.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-94.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/pages/zone-95.html</loc></url>
+  <!-- Villes Paris (sang) -->
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-1er-transport-de-sang.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-2e-transport-de-sang.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-3e-transport-de-sang.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-4e-transport-de-sang.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-5e-transport-de-sang.html</loc>
+  </url>
 
-  <!-- Pages villes -->
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-1er-transport-de-sang.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-2e-transport-de-sang.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-3e-transport-de-sang.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-1er-transport-de-greffe.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-1er-transport-divers.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-2e-transport-de-greffe.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-2e-transport-divers.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-3e-transport-de-greffe.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-3e-transport-divers.html</loc></url>
+  <!-- Villes Paris (greffe & divers) -->
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-1er-transport-de-greffe.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-2e-transport-de-greffe.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-3e-transport-de-greffe.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-4e-transport-de-greffe.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-5e-transport-de-greffe.html</loc>
+  </url>
 
-  <!-- Villes du 92 -->
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-boulogne-billancourt.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-nanterre-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-antony-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-levallois-perret-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-chaville-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-suresnes-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-neuilly-sur-seine-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-asnieres-sur-seine-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-colombes-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-courbevoie.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-meudon-92.html</loc></url>
-  <url><loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-sevres-92.html</loc></url>
+  <!-- Divers -->
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-1er-transport-divers.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-2e-transport-divers.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-3e-transport-divers.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-4e-transport-divers.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/paris-5e-transport-divers.html</loc>
+  </url>
+
+  <!-- Hauts-de-Seine -->
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-antony-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-asnieres-sur-seine-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-boulogne-billancourt.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-chaville-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-colombes-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-courbevoie.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-la-garenne-colombe-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-levallois-perret-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-meudon-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-nanterre-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-neuilly-sur-seine-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-sevres-92.html</loc>
+  </url>
+  <url>
+    <loc>https://www.eletre-transport-greffes-sang.fr/villes/transport-suresnes-92.html</loc>
+  </url>
+
 </urlset>
